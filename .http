@@ -1,0 +1,34 @@
+GET http://localhost:3000/photo/all
+
+###
+
+GET http://localhost:3000/photo/4
+
+###
+
+POST http://localhost:3000/photo/new
+Content-Type: application/json
+
+{
+    "name": "MyThird photo",
+    "description": "photo by CN",
+    "filename": "third-cn.png",
+    "views": 30213,
+    "isPublished": true
+}
+
+###
+PATCH  http://localhost:3000/photo/4
+Content-Type: application/json
+
+{
+    "name": "MyThird photo",
+    "description": "photo by KR",
+    "filename": "third-kr.png",
+    "views": 30213,
+    "isPublished": true
+}
+
+###
+
+DELETE  http://localhost:3000/photo/4
